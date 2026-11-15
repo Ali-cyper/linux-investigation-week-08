@@ -12,13 +12,13 @@ Part of a self-designed 12-week SOC investigation curriculum. Earlier weeks cove
 
 | Day | Case | Topic |
 |---|---|---|
-| 1 | W8-C1 | Linux authentication logs (`auth.log`) |
-| 2 | W8-C2 | System logs (`syslog`) |
-| 3 | W8-C3 | SSH investigation |
-| 4 | W8-C4 | Linux processes (PID/PPID, command lines) |
-| 5 | W8-C5 | Persistence (systemd units, cron) |
-| 6 | W8-C6 | Suspicious commands + end-to-end correlation |
-| 6–7 | W8-PCAP | Light PCAP exercise linked to W8-C6 |
+| 1 | [W8-C1](cases/case-01-auth-log.md) | Linux authentication logs (`auth.log`) |
+| 2 | [W8-C2](cases/case-02-syslog.md) | System logs (`syslog`) |
+| 3 | [W8-C3](cases/case-03-ssh.md) | SSH investigation |
+| 4 | [W8-C4](cases/case-04-processes.md) | Linux processes (PID/PPID, command lines) |
+| 5 | [W8-C5](cases/case-05-persistence.md) | Persistence (systemd units, cron) |
+| 6 | [W8-C6](cases/case-06-end-to-end.md) | Suspicious commands + end-to-end correlation |
+| 6–7 | [W8-PCAP](cases/pcap-exercise.md) | Light PCAP exercise linked to W8-C6 |
 | 7 | — | Weekly review |
 
 ## Method and rules
@@ -34,13 +34,13 @@ Part of a self-designed 12-week SOC investigation curriculum. Earlier weeks cove
 
 | Case | Topic | Verdict | Confidence | Impact | Action | Time spent |
 |---|---|---|---|---|---|---|
-| W8-C1 | auth.log | FP | Medium* | No Observed Impact | Monitor | not recorded |
-| W8-C2 | syslog | Undetermined | Medium | Operational: Confirmed / Security: Unknown | Escalate* | not recorded |
-| W8-C3 | SSH | Undetermined (Suspicious Successful Access) | Medium | Unknown | Escalate | 65 min |
-| W8-C4 | Processes | FP | Medium | No Observed Impact | Monitor | 45 min |
-| W8-C5 | Persistence | Undetermined | Medium | Persistence: Confirmed / Security: Unknown | Monitor* | not recorded |
-| W8-C6 | End-to-end | TP | High | Execution + persistence: Confirmed / Data: Unknown | Escalate | 60 min |
-| W8-PCAP | Network | Suspicious Network Activity | Medium* | Unknown | Escalate | 40 min |
+| [W8-C1](cases/case-01-auth-log.md) | auth.log | FP | Medium* | No Observed Impact | Monitor | not recorded |
+| [W8-C2](cases/case-02-syslog.md) | syslog | Undetermined | Medium | Operational: Confirmed / Security: Unknown | Escalate* | not recorded |
+| [W8-C3](cases/case-03-ssh.md) | SSH | Undetermined (Suspicious Successful Access) | Medium | Unknown | Escalate | 65 min |
+| [W8-C4](cases/case-04-processes.md) | Processes | FP | Medium | No Observed Impact | Monitor | 45 min |
+| [W8-C5](cases/case-05-persistence.md) | Persistence | Undetermined | Medium | Persistence: Confirmed / Security: Unknown | Monitor* | not recorded |
+| [W8-C6](cases/case-06-end-to-end.md) | End-to-end | TP | High | Execution + persistence: Confirmed / Data: Unknown | Escalate | 60 min |
+| [W8-PCAP](cases/pcap-exercise.md) | Network | Suspicious Network Activity | Medium* | Unknown | Escalate | 40 min |
 
 \* Adjusted or noted after review. Each case file has an **Evolution** section showing the first submission, what was wrong, and what changed.
 

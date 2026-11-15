@@ -12,13 +12,13 @@
 
 | اليوم | الحالة | الموضوع |
 |---|---|---|
-| 1 | W8-C1 | سجلات المصادقة (`auth.log`) |
-| 2 | W8-C2 | سجلات النظام (`syslog`) |
-| 3 | W8-C3 | التحقيق في SSH |
-| 4 | W8-C4 | عمليات Linux (PID/PPID وسطر الأوامر) |
-| 5 | W8-C5 | Persistence (وحدات systemd وcron) |
-| 6 | W8-C6 | الأوامر المشبوهة والتحقيق المتكامل |
-| 6–7 | W8-PCAP | تمرين PCAP خفيف مرتبط بـ W8-C6 |
+| 1 | [W8-C1](cases/case-01-auth-log.md) | سجلات المصادقة (`auth.log`) |
+| 2 | [W8-C2](cases/case-02-syslog.md) | سجلات النظام (`syslog`) |
+| 3 | [W8-C3](cases/case-03-ssh.md) | التحقيق في SSH |
+| 4 | [W8-C4](cases/case-04-processes.md) | عمليات Linux (PID/PPID وسطر الأوامر) |
+| 5 | [W8-C5](cases/case-05-persistence.md) | Persistence (وحدات systemd وcron) |
+| 6 | [W8-C6](cases/case-06-end-to-end.md) | الأوامر المشبوهة والتحقيق المتكامل |
+| 6–7 | [W8-PCAP](cases/pcap-exercise.md) | تمرين PCAP خفيف مرتبط بـ W8-C6 |
 | 7 | — | المراجعة الأسبوعية |
 
 ## المنهج والقواعد
@@ -34,13 +34,13 @@
 
 | الحالة | الموضوع | Verdict | Confidence | Impact | الإجراء | الوقت |
 |---|---|---|---|---|---|---|
-| W8-C1 | auth.log | FP | Medium* | No Observed Impact | Monitor | غير مسجّل |
-| W8-C2 | syslog | Undetermined | Medium | تشغيلي: مؤكد / أمني: Unknown | Escalate* | غير مسجّل |
-| W8-C3 | SSH | Undetermined (Suspicious Successful Access) | Medium | Unknown | Escalate | 65 د |
-| W8-C4 | العمليات | FP | Medium | No Observed Impact | Monitor | 45 د |
-| W8-C5 | Persistence | Undetermined | Medium | Persistence مؤكد / أمني: Unknown | Monitor* | غير مسجّل |
-| W8-C6 | متكامل | TP | High | تنفيذ + Persistence مؤكد / البيانات: Unknown | Escalate | 60 د |
-| W8-PCAP | الشبكة | Suspicious Network Activity | Medium* | Unknown | Escalate | 40 د |
+| [W8-C1](cases/case-01-auth-log.md) | auth.log | FP | Medium* | No Observed Impact | Monitor | غير مسجّل |
+| [W8-C2](cases/case-02-syslog.md) | syslog | Undetermined | Medium | تشغيلي: مؤكد / أمني: Unknown | Escalate* | غير مسجّل |
+| [W8-C3](cases/case-03-ssh.md) | SSH | Undetermined (Suspicious Successful Access) | Medium | Unknown | Escalate | 65 د |
+| [W8-C4](cases/case-04-processes.md) | العمليات | FP | Medium | No Observed Impact | Monitor | 45 د |
+| [W8-C5](cases/case-05-persistence.md) | Persistence | Undetermined | Medium | Persistence مؤكد / أمني: Unknown | Monitor* | غير مسجّل |
+| [W8-C6](cases/case-06-end-to-end.md) | متكامل | TP | High | تنفيذ + Persistence مؤكد / البيانات: Unknown | Escalate | 60 د |
+| [W8-PCAP](cases/pcap-exercise.md) | الشبكة | Suspicious Network Activity | Medium* | Unknown | Escalate | 40 د |
 
 \* عُدّل أو أُشير إليه بعد المراجعة. كل ملف حالة فيه قسم **Evolution** يوضح التسليم الأول وما كان خاطئاً وما تغيّر.
 
@@ -61,7 +61,7 @@
 | W8-C5 | حوالي 30% (تحليل وصياغة إنجليزية) |
 | W8-C6 | حوالي 2% (سؤال بسيط) |
 | W8-PCAP | حوالي 10% (تلميح) مع مساعدة في كتابة جدول التصنيف |
-| W8-C1 وC3 وC4 | [يؤكدها المؤلف قبل النشر] |
+| W8-C1 وC3 وC4 | استخدمت الذكاء الاصطناعي فقط في تحرير النص والصياغة الإنجليزية، والتحليل من عملي |
 
 ## هيكل المستودع
 

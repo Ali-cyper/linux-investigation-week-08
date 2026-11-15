@@ -61,7 +61,7 @@ Part of a self-designed 12-week SOC investigation curriculum. Earlier weeks cove
 | W8-C5 | About 30% (analysis and English wording) |
 | W8-C6 | About 2% (one simple question) |
 | W8-PCAP | About 10% (a hint) plus writing help on the final classification table |
-| W8-C1, C3, C4 | [author to confirm before publishing] |
+| W8-C1, C3, C4 | AI used only for editing text and English wording; the analysis was my own |
 
 ## Repository structure
 
